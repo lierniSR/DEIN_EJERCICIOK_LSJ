@@ -79,7 +79,87 @@ public class RelojControlador {
     private void actualizarHoraPantalla(){
         cambiarHora();
         cambiarMinuto();
-        //cambiarSegundo();
+        cambiarSegundo();
+    }
+    /**
+     * Metodo para cambiar los segundos que a su vez llama a otros dos metodos
+     * Esto lo he hecho así porque sabía que si no me iva a liar
+     */
+    private void cambiarSegundo() {
+        cambiarSegundoNum1();
+        cambiarSegundoNum2();
+    }
+
+    /**
+     * Metodo para cambiar el numero 2 de los segundos
+     */
+    private void cambiarSegundoNum2() {
+        if(horaString.charAt(7) == '0'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/ZERO.png"))));
+        }
+        if(horaString.charAt(7) == '1'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/ONE.png"))));
+        }
+        if(horaString.charAt(7) == '2'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/TWO.png"))));
+        }
+        if(horaString.charAt(7) == '3'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/THREE.png"))));
+        }
+        if(horaString.charAt(7) == '4'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/FOUR.png"))));
+        }
+        if(horaString.charAt(7) == '5'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/FIVE.png"))));
+        }
+        if(horaString.charAt(7) == '6'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/SIX.png"))));
+        }
+        if(horaString.charAt(7) == '7'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/SEVEN.png"))));
+        }
+        if(horaString.charAt(7) == '8'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/EIGHT.png"))));
+        }
+        if(horaString.charAt(7) == '9'){
+            segundoNum2.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/NINE.png"))));
+        }
+    }
+
+    /**
+     * Metodo para cambiar el numero 1 de los segundos
+     */
+    private void cambiarSegundoNum1() {
+        if(horaString.charAt(6) == '0'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/ZERO.png"))));
+        }
+        if(horaString.charAt(6) == '1'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/ONE.png"))));
+        }
+        if(horaString.charAt(6) == '2'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/TWO.png"))));
+        }
+        if(horaString.charAt(6) == '3'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/THREE.png"))));
+        }
+        if(horaString.charAt(6) == '4'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/FOUR.png"))));
+        }
+        if(horaString.charAt(6) == '5'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/FIVE.png"))));
+        }
+        if(horaString.charAt(6) == '6'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/SIX.png"))));
+        }
+        if(horaString.charAt(6) == '7'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/SEVEN.png"))));
+        }
+        if(horaString.charAt(6) == '8'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/EIGHT.png"))));
+        }
+        if(horaString.charAt(6) == '9'){
+            segundoNum1.setImage(new Image(String.valueOf(Reloj.class.getResource("Imagenes/NINE.png"))));
+        }
     }
 
     /**
