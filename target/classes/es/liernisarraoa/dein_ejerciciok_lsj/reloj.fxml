@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.liernisarraoa.dein_ejerciciok_lsj.Controlador.RelojControlador">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@Imagenes/fondoReloj.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="39.0" layoutY="160.0" prefHeight="141.0" prefWidth="523.0">
+         <children>
+            <ImageView fx:id="horaNum1" fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/ZERO.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="horaNum2" fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/ZERO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <image>
+                  <Image url="@Imagenes/puntos.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minutoNum1" fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/ZERO.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minutoNum2" fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/ZERO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/puntos.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="segundoNum1" fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/ZERO.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="segundoNum2" fitHeight="122.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/ZERO.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</Pane>
